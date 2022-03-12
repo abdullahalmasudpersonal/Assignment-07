@@ -26,19 +26,8 @@ const reportPost = (id) => {
     showPosts(remainingPosts);
 };
 
-//  const displayContent = (text) => {
-//     return text.length <= 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
-// }; 
 const displayContent = (text) => {
-  if(text.length  < 30 ){
-   return text;
-  }
-  else{
-    slicess=text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
-     return slicess;
-  }
-  //  slicess=text.slice(0, 30);
-  // return slicess;
+  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 }; 
 
 const switchTab = (id)  => {
