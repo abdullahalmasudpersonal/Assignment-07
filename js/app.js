@@ -1,5 +1,4 @@
 let posts=[ ];
-
 const likedPostsId = [];
 const reportedPostsId = [];
 
@@ -52,7 +51,6 @@ const switchTab = (id)  => {
 
 const createPost = (post) => {
     const image = post.image; 
-    //const displayContent =post.description;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
     div.innerHTML = `
@@ -121,9 +119,9 @@ const createPost = (post) => {
                   <div class="post__description">
                     <small>
                       <a class="post__name--underline" href="#">
-                          ${post.comments?.user}
+                          ${post.comments.user}
                       </a>
-                      ${post.comments?.text}
+                      ${post.comments.text}
                     </small>
                   </div>
                   <span class="post__date-time">30 minutes ago</span>

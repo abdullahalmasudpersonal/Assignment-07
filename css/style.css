@@ -17,14 +17,6 @@ textarea {
   font-family: 'Roboto', sans-serif;
 }
 
-/* my custom */
-#span::before {
-  content: 'Show more';
-  color: rgb(56, 47, 35);
-}
-
-
-
 /* Vars */
 :root {
   --primary: hsl(0, 0%, 100%);
