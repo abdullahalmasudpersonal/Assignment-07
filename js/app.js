@@ -151,6 +151,7 @@ const displayLikedPosts = () => {
 displayLikedPosts();
 
 const displayReportedPosts = () => {
+  document.getElementById('questions').style.display = "hidden";
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
         const div = createPost(post);
@@ -158,6 +159,7 @@ const displayReportedPosts = () => {
     });
 };
 displayReportedPosts();
+
 
 const loadPosts = async () =>{
   let data = await fetch('../data/posts.json');
